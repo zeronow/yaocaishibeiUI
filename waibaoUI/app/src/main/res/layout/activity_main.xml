@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/first_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="该图片最大的预测结果是：XXX"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        />
+
+    <ImageView
+        android:id="@+id/image_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/image_first"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/first_result"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_first"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/another2results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="另外两种可能性是：XXX和XXX"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/another2results"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/image_first"/>
+
+            <ImageView
+                android:id="@+id/image_third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/image_first"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tishi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="点击图片可以查看详情"
+        android:layout_alignParentBottom="true"
+        android:textSize="18dp"
+        android:layout_below="@id/RelativeLayout_child"
+        android:gravity="center"
+        android:textColor="#339966"/>
+</RelativeLayout>
