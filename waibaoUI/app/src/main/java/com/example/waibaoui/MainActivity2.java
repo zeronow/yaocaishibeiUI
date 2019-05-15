@@ -12,7 +12,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        //隐藏标题栏
+        //隐藏标题栏dddd
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
