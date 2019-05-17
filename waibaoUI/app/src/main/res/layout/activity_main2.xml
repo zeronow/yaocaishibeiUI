@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/title"
-        android:iconifiedByDefault="false"
+        android:iconifiedByDefault="true"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -104,7 +104,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="植物百科"
+                android:text="中药百科"
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:layout_marginLeft="10dp"
@@ -112,7 +112,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="专业植物百科全书"
+                android:text="专业中药百科全书"
                 android:textSize="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="5dp"
