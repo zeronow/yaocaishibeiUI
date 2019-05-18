@@ -26,10 +26,13 @@ public class MainActivity2 extends AppCompatActivity {
 
         searchview = (SearchView)findViewById(R.id.searchview);
 
+        searchview.setQueryHint("搜索药材名, 内容关键字等");
+
         searchview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                return false;
+                searchview.setIconified(true); //收起搜索框, 会触发onCloseClick事件
+                return true;
             }
             @Override
             public boolean onQueryTextChange(String newText) {
@@ -53,7 +56,7 @@ public class MainActivity2 extends AppCompatActivity {
         relativeLayout_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this,SettingActivity.class);
+                Intent intent = new Intent(MainActivity2.this,EncyclopediaActivity.class);
                 startActivity(intent);
             }
         });

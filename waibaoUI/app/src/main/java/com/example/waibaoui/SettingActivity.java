@@ -13,5 +13,5 @@ public class SettingActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);//返回
         actionBar.setTitle("系统设置");
-}
+    }
 }
